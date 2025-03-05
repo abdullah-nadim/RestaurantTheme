@@ -6,4 +6,20 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Remove="compilerconfig.json" />
+    <Content Remove="wwwroot\css\mainDark.css" />
+    <Content Remove="wwwroot\css\mainDark.min.css" />
+    <Content Remove="wwwroot\css\mainLight.css" />
+    <Content Remove="wwwroot\css\mainLight.min.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="compilerconfig.json" />
+    <None Include="wwwroot\css\mainDark.css" />
+    <None Include="wwwroot\css\mainDark.min.css" />
+    <None Include="wwwroot\css\mainLight.css" />
+    <None Include="wwwroot\css\mainLight.min.css" />
+  </ItemGroup>
+
 </Project>

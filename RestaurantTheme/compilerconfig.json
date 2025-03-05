@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "Sass/mainLight.css",
+    "inputFile": "Sass/mainLight.scss"
+  },
+  {
+    "outputFile": "Sass/mainDark.css",
+    "inputFile": "Sass/mainDark.scss"
+  }
+]

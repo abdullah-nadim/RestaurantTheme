@@ -1,0 +1,12 @@
+﻿@model RestaurantTheme.Models.FoodItem
+
+<div class="col-md-4">
+    <div class="card mb-3">
+        <img src="~/images/@(Model.Name.Replace(" ", "").ToLower()).jpg" class="card-img-top" alt="@Model.Name">
+        <div class="card-body">
+            <h5 class="card-title">@Model.Name</h5>
+            <p class="card-text"><strong>Category:</strong> @Model.Category</p>
+            <p class="card-text"><strong>Price:</strong> @Model.Price</p>
+        </div>
+    </div>
+</div>

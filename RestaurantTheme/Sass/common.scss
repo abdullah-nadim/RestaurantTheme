@@ -1,0 +1,14 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-custom {
+    @extend .navbar;
+    @extend .navbar-expand-lg;
+}
+
+.footer-custom {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}

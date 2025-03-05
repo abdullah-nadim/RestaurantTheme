@@ -1,0 +1,22 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "common.scss";
+@import "Components/footer.scss";
+body {
+    background-color: #ffffff;
+    color: #212529;
+}
+
+.navbar-custom {
+    @extend .navbar-light;
+    @extend .bg-light;
+}
+
+.footer-custom {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.theme-toggle {
+    @extend .btn;
+    @extend .btn-outline-dark;
+}

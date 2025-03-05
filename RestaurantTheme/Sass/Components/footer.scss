@@ -1,0 +1,38 @@
+.footer-custom {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .footer-contact {
+        text-align: left;
+        flex: 1;
+    }
+
+    .footer-social {
+        text-align: center;
+        flex: 1;
+    }
+
+    .footer-timing {
+        text-align: right;
+        flex: 1;
+    }
+
+    .social-icon img {
+        width: 30px;
+        height: 30px;
+        margin: 0 10px;
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}

@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewData["Title"] - Restaurant</title>
+    <link id="themeStylesheet" rel="stylesheet" href="~/css/mainLight.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-custom">
+        <div class="container">
+            <a class="navbar-brand" asp-controller="Home" asp-action="Index">Restaurant</a>
+            <button id="themeToggle" class="btn theme-toggle">Dark Mode</button>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        @RenderBody()
+    </div>
+
+    <footer class="footer-custom py-4">
+        <div class="container d-flex justify-content-between align-items-center flex-wrap">
+            <!-- Left: Contact Us -->
+            <div class="footer-contact">
+                <h5>CONTACT US</h5>
+                <p>Email: info@chinese.com</p>
+                <p>Phone: +8801XXXXXXX</p>
+                <p>House 52/1, Road-2, Block-C, Section - 13, Mirpur, Dhaka</p>
+            </div>
+
+            <!-- Middle: Social Media -->
+            <div class="footer-social">
+                <a href="#" class="social-icon"><img src="~/images/instagram.svg" alt="Instagram"></a>
+                <a href="#" class="social-icon"><img src="~/images/facebook.svg" alt="Facebook"></a>
+            </div>
+
+            <!-- Right: Outlets Timing -->
+            <div class="footer-timing text-end">
+                <h5>OUTLETS TIMING</h5>
+                <p>Opening - 10:00 AM</p>
+                <p>Closing - 10:00 PM</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        document.getElementById("themeToggle").addEventListener("click", function() {
+            let themeLink = document.getElementById("themeStylesheet");
+            if (themeLink.getAttribute("href").includes("mainLight.css")) {
+                themeLink.setAttribute("href", "/css/mainDark.css");
+                this.textContent = "Light Mode";
+            } else {
+                themeLink.setAttribute("href", "/css/mainLight.css");
+                this.textContent = "Dark Mode";
+            }
+        });
+    </script>
+</body>
+</html>
